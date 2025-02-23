@@ -1,0 +1,216 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+ <body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="/Users/deepak/Desktop/images/logo2.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header" style="--i:1" class="active"><b>Home</b></a></li>
+                <li><a href="#about" style="--i:2"><b>About</b></a></li>
+                <li><a href="#skills" style="--i:3"><b>Skills</b></a></li>
+                <li><a href="#project" style="--i:4"><b>Projects</b></a></li>
+                <li><a href="#contact" style="--i:5"><b>Contact</b></a></li>
+                <i class='bx bx-x-circle' style="color: rgb(173, 37, 64);" onclick="closemenu()"></i>
+            </ul>
+            <i class='bx bx-menu' style='color:#36c8d3' onclick="openmenu()" ></i>
+        </nav>
+        <div class="header-text">
+        <P>Portofolio.</P>
+        <h1>Hello, Myself <br><span>Karri Deepak Seshu<br>Reddy</h1></span>
+        <h2>from Andhra Pradesh<br> And I'm a <span class="text"></span></h2>
+            <a href="#about" class="btn-box">More About Me</a>
+        </div>
+    
+    </div>
+</div> 
+
+
+<!--------about------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="/Users/deepak/Desktop/images/back.JPG">
+                <a href="/Users/deepak/Desktop/images/cv2.pdf"  target="_blank" class="resume"><i class='bx bxs-show'></i>    View Resume</a>
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p><span class="para"></span></p>
+                <div class="tab-titles">
+                   <!--<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>--> 
+                    
+                    <p class="tab-links" onclick="opentab('education')" style="--i:6">🎓<b>Education</b></p>
+                    <p class="tab-links" onclick="opentab('certifications')" style="--i:7">📜<b>Certificates</b></p>
+                    <p class="tab-links" onclick="opentab('internship')" style="--i:8">💼<b>Internship</b></p>
+                    <p class="tab-links" onclick="opentab('achievement')" style="--i:9">🏆<b>Achievements</b></p>
+                </div> 
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span><b>• Graduation [B.Tech(Bachelor of Technology) in Computer Science and Engineering(CSE)]</b> </span><br>Graduating in 2026<br>Lovely Professional University (LPU), Punjab, India<br>Percentage - 76.2% (certificate)</li>
+                        <li><span><b>• Intermediate(12<sup>th</sup>) [The Board of Intermediate Education, Andhra Pradesh (BIEAP)]</b></span><br>2020 - 2022<br>Sri Chaitanya junior college, Andhra Pradesh, India<br>Percentage - 97.5% <a href="images/12th class mark list.pdf" target="_blank" style="color: #F0E68C;">(12<sup>th</sup> Class Certificate)</a></li>
+                        <li><span><b>• 10<sup>th</sup> Class [The Board of Secondary Education, Andhra Pradesh]</b></span><br>2019 - 2020<br>Sri Chaitanya Techno School, Andhra Pradesh<br>Percentage - 93.7% <a href="images/10th class mark list.pdf" target="_blank" style="color: #F0E68C;">(10<sup>th</sup> Class Certificate)</a></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="certifications">
+                    <ul>
+                        <li><span><b>• NPTEL</b></span><br>Cloud Computing By NPTEL [October 2024]<a href="/Users/deepak/Desktop/certificates/Cloud Computing.pdf" target="_blank" style="color: #F0E68C;"> (Certification)</a></li>
+                        <li><span><b>• GeeksforGeeks</b></span><br>Data Structures and Algorithms - Self Paced. [July 2024]<a href="/Users/deepak/Desktop/certificates/gfg dsa.png" target="_blank" style="color: #F0E68C;"> (Certificate)</a></li>
+                        <li><span><b>• Coursera</b></span><br>• Dynamic Programming, Greedy Algorithms [May 2024]<a href="/Users/deepak/Desktop/certificates/426/Coursera ZFVBPPK2GX4L.pdf" target="_blank" style="color: #F0E68C;"> (Certificate)</a><br> • Generative AI with Large Language Models [March 2024]<a href="/Users/deepak/Desktop/certificates/426/Coursera 7.pdf" target="_blank" style="color: #F0E68C;"> (Certificate)</a><br>• Programming in C++: A Hands-on Introduction [February 2024]<a href="/Users/deepak/Desktop/certificates/Coursera Y8A7S6NS4UFQ.pdf" target="_blank" style="color: #F0E68C;"> (Certificate)</a></li>
+                        <!-- <li><span><b>• Coursera</b></span><br>Programming in C++: A Hands-on Introduction [February 2024]<a href="certificates/linkedin_certificate.pdf" target="_blank" style="color: #47c2ff;"></a></li> -->
+                        <li><span><b>• Linkedin</b></span><br>Become a Data Scientist [February 2023]<a href="/Users/deepak/Desktop/certificates/CertificateOfCompletion_Become a Data Scientist.pdf" target="_blank" style="color: #F0E68C;">(Certificate)</a></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="internship">
+                    <ul>
+                        <li><span><b>• Machine Learning Intern</b></span><br>Academor - (Remote)<br>September 2024 - October 2024<br><a href="images/Intership_certificate(Academor).pdf" target="_blank" style="color: #F0E68C;">Internship Certificate</a><br><b><a style="color: #47c2ff;">• Acquired skills:</a></b> Python Programming, Python Libraries, Machine Learning, Object-Oriented Programming (OOPS)</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="achievement">
+                    <ul>
+                        <li><span><b>• Research Paper Publication</b></span><br>• Hinweis Conference <a href="images/conference certificate.pdf" target="_blank" style="color: #47c2ff;"> (Certificate)</a><br>• Published a <a href="images/camera_ready_research_paper.pdf" target="_blank" style="color: #f7f7f7;">research paper</a> on Natural Language Processing titled "Integrating Probabilities Models and Neural Networks for Enhanced Part-of-Speech Tagging and Spellchecking" at the Hinweis International Conference on RTET 2024, indexed by Scopus and Crossref.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Skills Section -->
+     
+<div id="skills">
+    <h1 class="title">MY SKILLS</h1>
+    <section class="skills-container">
+        <!-- Technical Skills -->
+        <div class="skills-category">
+            <h2 class="skills-heading">Technical Skills</h2>
+            <div class="skills-list">
+                <div class="skill-box c-plus-plus"><i class='bx bxl-c-plus-plus'></i> C++</div>
+                <div class="skill-box java"><i class='bx bxl-java'></i> Java</div>
+                <div class="skill-box python"><i class='bx bxl-python'></i> Python</div>
+                <div class="skill-box html"><i class='bx bxl-html5'></i> HTML</div>
+                <div class="skill-box css"><i class='bx bxl-css3'></i> CSS</div>
+                <div class="skill-box javascript"><i class='bx bxl-javascript'></i> JavaScript</div>
+                <div class="skill-box git"><i class='bx bxl-git'></i> Git</div>
+                <div class="skill-box github"><i class='bx bxl-github'></i> GitHub</div>
+                <div class="skill-box ml"><i class='bx bx-brain'></i> Machine Learning</div>
+                <div class="skill-box nlp"><i class='bx bx-chat'></i> NLP</div>
+                <div class="skill-box dl"><i class='bx bx-chip'></i> Deep Learning</div>
+                <div class="skill-box cv"><i class='bx bx-image'></i> Computer Vision</div>
+                <div class="skill-box dsa"><i class='bx bx-code-alt'></i> Data Structures & Algorithms</div>
+                <div class="skill-box sql"><i class='bx bx-data'></i> SQL Database</div>
+                <div class="skill-box docker"><i class='bx bxl-docker'></i> DevOps Tools</div>
+            </div>
+        </div>
+        <!-- Soft Skills -->
+        <div class="skills-category">
+            <h2 class="skills-heading">Soft Skills</h2>
+            <div class="skills-list">
+                <div class="skill-box communication">Communication</div>
+                <div class="skill-box thinking">Creative Thinking</div>
+                <div class="skill-box problem-solving">Problem Solving</div>
+                <div class="skill-box teamwork">Team Work</div>
+                <div class="skill-box leadership">Leadership</div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
+
+<!--Projects-->
+
+<section>
+    
+    <div id="portf" id="project">
+        <div class="main-text" id="project">
+            <h1 class="title">MY PROJECTS</h1>
+            <div class="portf-content">
+                <div class="row">
+                    <img src="/Users/deepak/Desktop/images/named entity recognization.png">
+                    <div class="layer">
+                        <h5>Natural Language Processing (NLP)</h5>
+                        <p>Named Entity Recognization using BERT,SPACY</p>
+                        <a href="https://github.com/KarriDeepakSeshuReddy/named-entity-recognization"><i class='bx bx-link-external' style="color: rgb(255, 255, 255);"></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="/Users/deepak/Desktop/images/titanic.jpg">
+                    <div class="layer">
+                        <h5>Machine Learning</h5>
+                        <p>Titanic survival prediction (Logistic Regression) </p>
+                        <a href="https://github.com/KarriDeepakSeshuReddy/Titanic-Survival-Prediction"><i class='bx bx-link-external' style="color: rgb(255, 255, 255);"></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="/Users/deepak/Desktop/images/Machine-Learning-Project-on-Heart-Disease-Prediction.webp">
+                    <div class="layer">
+                        <h5>Machine Learning</h5>
+                        <p>Heart Disease Prediction Using machine learning models</p>
+                        <a href="https://github.com/praveenkumar949/heart_disease_prediction_ml"><i class='bx bx-link-external' style="color: rgb(255, 255, 255);"></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="/Users/deepak/Desktop/images/chatbot.webp">
+                    <div class="layer">
+                        <h5>Machine Learning</h5>
+                        <p>Yoga Pose Prediction using different machine learning models</p>
+                        <a href="https://github.com/praveenkumar949/yoga_pose_prediction_ml"><i class='bx bx-link-external' style="color: rgb(255, 255, 255);"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- contact-->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class='bx bxl-gmail' style='color:#F0E68C'  ></i>deepaksahith418@gmail.com</p>
+                <p><i class='bx bxs-phone' style='color:#F0E68C'></i></i>+91 8074565939</p>
+
+                
+                <div class="social-icons">
+    
+                    <a href="www.linkedin.com/in/deepak-seshu-reddy" class="linkedin" ><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="https://github.com/KarriDeepakSeshuReddy" class="github"><i class='bx bxl-github'></i></a>
+                    <a href="https://leetcode.com/profile/" class="leetcode"><i class='bx bx-code-alt'></i></a>
+                    <a href="https://www.instagram.com/deepakreddy_418/" class="instagram"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100030650483433" class="facebook"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="https://x.com/DeepakR04895730 " class="twitter"><i class='bx bxl-twitter'></i></a>
+                </div>
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="Email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn-box btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Deepak Reddy. Portofolio website</p>
+    </div>
+</div>
+<script src="main.js"></script>
+
+</body>
+</html>
